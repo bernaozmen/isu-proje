@@ -68,16 +68,20 @@
                                     <form method="POST" id="contactForm" name="contactForm" class="contactForm">
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <div class="form-group"><label class="label" for="name">Ad Soyad</label><input type="text" class="form-control" name="name" id="name" placeholder="Ad Soyad"></div>
+                                                <div class="form-group"><label class="label" for="name">Ad Soyad</label><input type="text" class="form-control" name="name" id="name" runat="server" placeholder="Ad Soyad">
+                                                <asp:RequiredFieldValidator ErrorMessage="Lütfen Ad Soyad giriniz" ControlToValidate="name" ForeColor="Red" runat="server" />
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group"><label class="label" for="email">E-Posta Adresi</label><input type="email" class="form-control" name="email" id="email" runat="server" placeholder="E-Posta Adresi"></div>
+                                                <asp:RequiredFieldValidator ErrorMessage="Lütfen E-Posta Adresi giriniz" ControlToValidate="email" ForeColor="Red" runat="server" />
                                             </div>
                                             <div class="col-md-12">
-                                                <div class="form-group"><label class="label" for="subject">Konu</label><input type="text" class="form-control" name="subject" id="subject" placeholder="Konu"></div>
+                                                <div class="form-group"><label class="label" for="subject">Konu</label><input type="text" class="form-control" name="subject" id="subject" runat="server" placeholder="Konu"></div>
+                                                <asp:RequiredFieldValidator ErrorMessage="Lütfen Konu giriniz" ControlToValidate="subject" ForeColor="Red" runat="server" />
                                             </div>
                                             <div class="col-md-12">
-                                                <div class="form-group"><label class="label" for="#">Mesaj</label><textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Mesaj"></textarea></div>
+                                                <div class="form-group"><label class="label" for="#">Mesaj</label><textarea name="message" class="form-control" id="message" cols="30" rows="4" runat="server" placeholder="Mesaj"></textarea></div>
+                                                <asp:RequiredFieldValidator ErrorMessage="Lütfen Mesaj giriniz" ControlToValidate="message" ForeColor="Red" runat="server" />
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-group"><input type="submit" value="Gönder" class="btn btn-primary" runat="server" onserverclick="btn"></div>
