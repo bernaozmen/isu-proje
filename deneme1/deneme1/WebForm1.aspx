@@ -71,7 +71,7 @@
                                                 <div class="form-group"><label class="label" for="name">Ad Soyad</label><input type="text" class="form-control" name="name" id="name" placeholder="Ad Soyad"></div>
                                             </div>
                                             <div class="col-md-6">
-                                                <div class="form-group"><label class="label" for="email">E-Posta Adresi</label><input type="email" class="form-control" name="email" id="email" placeholder="E-Posta Adresi"></div>
+                                                <div class="form-group"><label class="label" for="email">E-Posta Adresi</label><input type="email" class="form-control" name="email" id="email" runat="server" placeholder="E-Posta Adresi"></div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-group"><label class="label" for="subject">Konu</label><input type="text" class="form-control" name="subject" id="subject" placeholder="Konu"></div>
